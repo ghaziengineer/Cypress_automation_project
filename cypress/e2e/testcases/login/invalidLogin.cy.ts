@@ -1,7 +1,7 @@
 describe('invalid Login testcase', () => {
   it('should not log in successfully with invalid credentials', () => {
     cy.visit('/');
-   cy.get('[data-test="username"]')..type('ghazi');
+   cy.get('[data-test="username"]').type('ghazi');
    cy.get('[data-test="password"]').type('ghazi_engineer');
    cy.get('[data-test="login-button"]').click();
 
