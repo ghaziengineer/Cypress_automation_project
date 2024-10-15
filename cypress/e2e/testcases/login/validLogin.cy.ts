@@ -1,12 +1,12 @@
-describe('Login Tests', () => {
+describe('valid Login testcase', () => {
   it('should log in successfully with valid credentials', () => {
-    cy.visit('https://www.saucedemo.com');
-    cy.get('#user-name').type('standard_user');
-    cy.get('#password').type('secret_sauce');
-    cy.get('#login-button').click();
+    cy.visit('/');
+    cy.get('[data-test="username"]').type('standard_user');
+    cy.get('[data-test="password"]').type('secret_sauce');
+    cy.get('[data-test="login-button"]').click()
 
-    // Verify successful login
-    cy.url().should('include', '/inventory.html');
-    cy.get('.title').should('contain', 'Products');
+    // Assert
+    cy.location('pathname').should('be.equal', '/inventory.html')
+    cy.contains('.title', 'Products').should('be.visible')
   });
 });
