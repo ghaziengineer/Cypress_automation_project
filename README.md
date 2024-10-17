@@ -34,6 +34,6 @@ Key features of Sauce Demo include:
 * Checkout Process: The site allows users to simulate the checkout process, making it useful for testing payment integrations and user flows.
 ### Managment
 * I chose ClickUp as my project management tool because it has profoundly improved my ability to oversee project development. 
-https://app.clickup.com/9012393665/v/li/901205019950 
+https://sharing.clickup.com/9012393665/l/h/8cjwdp1-312/cc57acaf52355b7
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
